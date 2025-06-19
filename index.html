@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Book Finder</title>
+  <meta name="author"  content="Madalyn Querubin">
+   <meta name="description" content="Search page for books">
   <link rel="stylesheet" href="src/styles/style.css" />
 </head>
 <body>
   <div class="container">
     <h1>Book Finder</h1>
     <div class="search-bar">
-      <input type="text" id="searchInput" placeholder="Search for books..." />
+      <input type="text" id="searchInput" placeholder="Search for books/authors..." />
       <button id="searchButton">Search</button>
+    </div>
+    <div class="controls">
+      <button id="viewFavorites">❤️ View Favorites</button>
     </div>
     <div id="bookResults" class="book-list"></div>
   </div>
 
-  <script type="module" src="src/js/app.js"></script>
+  <script type="module" src="./src/js/app.js"></script>
 </body>
 </html>
